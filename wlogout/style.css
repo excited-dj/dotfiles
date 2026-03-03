@@ -1,0 +1,55 @@
+* {
+    font-family: 'JetBrainsMono Nerd Font', 'JetBrains Mono', monospace;
+}
+
+window {
+    background-color: rgba(10, 10, 10, 0.45);
+}
+
+button {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(30, 30, 30, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center 38%;
+    background-size: 20%;
+    margin: 20px;
+    padding-top: 80px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+button:hover {
+    background-color: rgba(60, 60, 60, 0.85);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#lock {
+    background-image: image(url("/home/dj/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/home/dj/.config/wlogout/icons/logout.png"));
+}
+
+#shutdown {
+    background-image: image(url("/home/dj/.config/wlogout/icons/shutdown.png"));
+}
+
+#shutdown:hover {
+    background-color: rgba(80, 20, 20, 0.85);
+    border-color: rgba(255, 80, 80, 0.3);
+}
+
+#reboot {
+    background-image: image(url("/home/dj/.config/wlogout/icons/reboot.png"));
+}
