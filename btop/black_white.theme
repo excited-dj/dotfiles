@@ -1,0 +1,87 @@
+# Black & White theme for btop++
+
+# Main background
+theme[main_bg]="#000000"
+
+# Main text color
+theme[main_fg]="#ffffff"
+
+# Title color for boxes
+theme[title]="#ffffff"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#aaaaaa"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#333333"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#ffffff"
+
+# Color of inactive/greyed out text
+theme[inactive_fg]="#666666"
+
+# Color of text appearing on top of graphs
+theme[graph_text]="#cccccc"
+
+# Background of the percentage meters
+theme[meter_bg]="#222222"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#aaaaaa"
+
+# Color of cpu box outline
+theme[cpu_box]="#ffffff"
+
+# Color of memory/disks box outline
+theme[mem_box]="#bbbbbb"
+
+# Color of net box outline
+theme[net_box]="#999999"
+
+# Color of processes box outline
+theme[proc_box]="#dddddd"
+
+# Color of div lines
+theme[div_line]="#444444"
+
+# Temperature graph colors (from low to high)
+theme[temp_start]="#ffffff"
+theme[temp_mid]="#aaaaaa"
+theme[temp_end]="#555555"
+
+# CPU graph and meter colors
+theme[cpu_start]="#ffffff"
+theme[cpu_mid]="#aaaaaa"
+theme[cpu_end]="#444444"
+
+# Memory and disk graph colors
+theme[free_start]="#ffffff"
+theme[free_mid]="#999999"
+theme[free_end]="#444444"
+
+theme[cached_start]="#dddddd"
+theme[cached_mid]="#888888"
+theme[cached_end]="#333333"
+
+theme[available_start]="#cccccc"
+theme[available_mid]="#777777"
+theme[available_end]="#222222"
+
+theme[used_start]="#aaaaaa"
+theme[used_mid]="#666666"
+theme[used_end]="#111111"
+
+# Net graph colors
+theme[download_start]="#ffffff"
+theme[download_mid]="#aaaaaa"
+theme[download_end]="#555555"
+
+theme[upload_start]="#cccccc"
+theme[upload_mid]="#888888"
+theme[upload_end]="#333333"
+
+# Process gradient colors
+theme[process_start]="#ffffff"
+theme[process_mid]="#999999"
+theme[process_end]="#444444"
