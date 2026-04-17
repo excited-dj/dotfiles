@@ -1,0 +1,96 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 36,
+    "spacing": 4,
+    "margin-top": 8,
+    "margin-left": 12,
+    "margin-right": 12,
+    "modules-left": ["custom/arch", "hyprland/workspaces", "mpris"],
+    "modules-center": ["clock"],
+    "modules-right": ["hyprland/language", "backlight", "pulseaudio", "battery", "network", "tray", "custom/power"],
+
+    "custom/arch": {
+        "format": "󰣇",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "sort-by-number": true,
+        "persistent-workspaces": {"*": 5},
+        "smooth-scrolling-threshold": 1
+    },
+
+    "mpris": {
+        "format": "{player_icon}",
+        "format-paused": "{player_icon}",
+        "player-icons": {
+            "default": "󰝚",
+            "spotify": "",
+            "firefox": "󰈹",
+            "chromium": "",
+            "vlc": "󰕼"
+        },
+        "max-length": 1,
+        "tooltip-format": "{title}\n{artist}",
+        "tooltip": true
+    },
+
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%d.%m.%Y  %H:%M:%S}",
+        "interval": 1,
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-ru": "RU",
+        "on-click": "hyprctl switchxkblayout all next"
+    },
+
+    "network": {
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "format-disconnected": "󰤭 offline",
+        "tooltip-format": "{ifname}: {ipaddr}\n{signalStrength}%",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "󰕿 {volume}%",
+        "format-muted": "󰝟 muted",
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "󰃟 {percent}%",
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-",
+        "tooltip": false
+    },
+
+    "battery": {
+        "format": "󰂎 {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "tooltip": false
+    },
+
+    "tray": {
+        "spacing": 8,
+        "icon-size": 14
+    },
+
+    "custom/power": {
+        "format": "⏻",
+        "tooltip": false,
+        "on-click": "wlogout -l ~/.config/wlogout/layout -b 2 -c 10 -r 10"
+    }
+}
